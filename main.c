@@ -5,7 +5,6 @@ int main() {
 	FILE *file;
 	long length;
 	char *buffer;
-	printf("Welcome to ChocoMinty.\n");
 	file = fopen("example.minty", "r");
 	if (file == NULL) {
 		return 1;
