@@ -1,5 +1,15 @@
 print("Hello, world!")
 
+number = 123
+number2 = 321
+number3 = number + number2
+print(number3)
+if number3 = 444
+  print("Yep, math works!")
+else
+  print("Well, you broke math. Way to be")
+end
+
 # A recursive factorial function
 function factorial(n):
   if n == 0
@@ -28,3 +38,5 @@ while quit == false
     println("Okay then, I'll loop again.")
   else
     println("I have no clue what your answer is, so I'm going to loop again.")
+  end
+end
