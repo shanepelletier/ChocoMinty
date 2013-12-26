@@ -1,11 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main(int argc, char *argv[]) {
 	FILE *file;
 	long length;
 	char *buffer;
-	file = fopen("example.minty", "r");
+	if (argc < 2) {
+	  return 1;
+	}
+	file = fopen(argv[1], "r");
 	if (file == NULL) {
 		return 1;
 	}
