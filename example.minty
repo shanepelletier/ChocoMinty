@@ -1,6 +1,30 @@
-This is just some random text, to test the file reading.
-I haven't quite decided on syntax for the language.
+print("Hello, world!")
 
-5 + 3 = 8
+# A recursive factorial function
+function factorial(n):
+  if n == 0
+    return 1
+  else
+    return n * factorial(n - 1)
+  end
+end
 
-Canada, eh?
+print("Enter a number: ")
+a = readline()
+println(factorial(a))
+
+fruits = ["apples", "oranges", "bananas", "pears"]
+for fruit in fruits
+  print("I like to eat " + fruit)
+end
+
+quit = false
+while quit == false
+  println("Would you like to quit?")
+  answer = readline()
+  if answer == "yes"
+    quit = true
+  elif answer == "no"
+    println("Okay then, I'll loop again.")
+  else
+    println("I have no clue what your answer is, so I'm going to loop again.")
